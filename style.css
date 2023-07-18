@@ -1,0 +1,402 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Victor Mono", sans-serif;
+}
+
+body {
+  background-color: rgba(230, 103, 29, 0.867);
+}
+
+.contaner {
+  width: 85%;
+}
+
+h3 {
+  font-size: 35px;
+}
+/* конец общих функций*/
+
+/* начало navbara*/
+
+.nav {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  margin-right: 0;
+  margin-left: 0;
+}
+.animation {
+  margin-left: 45px;
+}
+
+.nav img:first-child {
+  margin-left: 45px;
+}
+
+.search a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 25px;
+  color: #ddd;
+}
+
+.animation img {
+  width: 20%;
+  height: 20%;
+}
+
+/* это вся голова */
+.home {
+  height: 450px;
+  margin-top: 50px;
+  display: flex;
+  color: #ddd;
+}
+
+.description {
+  margin-top: 47px;
+  margin-left: 0;
+}
+
+.home h1 {
+  font-size: 100px;
+  color: rgba(161, 59, 0, 0.867);
+  margin-bottom: 10px;
+}
+
+.home h2 {
+  font-size: 3.25rem;
+  margin-bottom: 15px;
+}
+
+.home p {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.home button {
+  width: 190px;
+  height: 59px;
+  border-radius: 30px;
+  margin-top: 20px;
+  background-color: rgba(161, 59, 0, 0.867);
+}
+
+.home button a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 15px;
+}
+
+/* о Ниле */
+.about {
+  margin-top: 80px;
+  display: flex;
+}
+
+.about__info {
+  font-size: 25px;
+  margin-left: 80px;
+  color: #ddd;
+}
+
+.about__info h3 {
+  font-weight: 700;
+  color: rgba(69, 136, 213, 0.867);
+}
+
+.about__info p {
+  margin-top: 30px;
+}
+
+.about__info ul {
+  margin-top: 50px;
+  list-style-type: none;
+}
+
+/* проценты умений */
+.container__skils {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skils {
+  line-height: 40px;
+  color: #ddd;
+  margin-bottom: 50px;
+}
+
+.skils__speed {
+  margin: 0;
+  width: 90%;
+  background-color: rgb(230, 118, 14);
+}
+
+.skils__endurance {
+  margin: 0;
+  width: 100%;
+  background-color: rgb(192, 53, 53);
+}
+
+.skils__strength {
+  margin: 0;
+  width: 40%;
+  background-color: rgb(116, 206, 127);
+}
+
+.skils__goal {
+  margin: 0;
+  width: 70%;
+  background-color: rgba(69, 136, 213, 0.867);
+}
+
+.skils__strategy {
+  margin: 0;
+  width: 80%;
+  background-color: rgb(220, 141, 22);
+}
+
+.skils h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 45%;
+}
+
+.skils p {
+  font-size: 20px;
+}
+
+/* начало хобби */
+.hobby {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  margin-top: 50px;
+  color: #ddd;
+  font-size: 19px;
+}
+.hobby_oll h3 {
+  margin-left: 45%;
+  color: #ddd;
+}
+
+.hobby h4 {
+  font-size: 20px;
+  margin-left: 0;
+  color: rgba(69, 136, 213, 0.867);
+  font-weight: 700;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(161, 59, 0, 0.867);
+  border-radius: 10%;
+  margin: 20px;
+  padding-left: 30px;
+  gap: 20px;
+}
+.run {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(161, 59, 0, 0.867);
+  border-radius: 10%;
+  padding-left: 30px;
+  margin: 20px;
+  gap: 20px;
+}
+.math {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(161, 59, 0, 0.867);
+  border-radius: 10%;
+  padding-left: 30px;
+  margin: 20px;
+  gap: 20px;
+}
+
+/* анимация */
+
+@keyframes uu {
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+#img1 {
+  animation: uu 9s infinite;
+}
+
+@keyframes u1 {
+  70% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+
+  0% {
+    opacity: 0;
+  }
+}
+
+#img2 {
+  animation: u1 9s infinite;
+}
+
+@keyframes u3 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#img3 {
+  animation: u3 9s 2;
+}
+
+/* вся команда */
+.section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.team {
+  margin-top: 50px;
+  display: flex;
+}
+
+.team h3 {
+  color: #ddd;
+  margin-left: 25%;
+  margin-bottom: 10px;
+}
+
+.section .photo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15%;
+}
+.section p {
+  color: #ddd;
+}
+/* это футер */
+
+.foot {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  position: absolute;
+}
+
+.animation_foot img {
+  width: 20%;
+  height: 20%;
+}
+
+/* aдаптивка */
+@media all and (max-width: 1024px) {
+
+  .search a {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .animation {
+    margin-left: 0;
+  }
+  .animation_foot {
+    margin-right: 0;
+  }
+  .about__info {
+    font-size: 16px;
+  }
+  .hobby {
+    font-size: 18px;
+  }
+
+  .sidebar {
+    background-color: rgb(221, 126, 67);
+  }
+}
+
+@media all and (max-width: 907px) {
+  .nav {
+    width: 1000px;
+  }
+
+  .contaner {
+    width: 1000px;
+    margin-left: 60px;
+  }
+
+  .foot {
+    width: 1000px;
+  }
+
+  .home {
+    margin-right: 50px;
+  }
+
+  .skils {
+    width: 935px;
+  }
+
+  .description {
+    width: 500px;
+    margin-right: 0;
+  }
+  .about__info p,
+  ul,
+  h3 {
+    margin-right: 50px;
+  }
+
+  .about__info {
+    margin: 0;
+    font-size: 22px;
+  }
+
+  .kol {
+    margin-right: 25%;
+  }
+
+  .animation_foot {
+    width: 300px;
+    margin-right: 0;
+  }
+
+  .animation {
+    width: 300px;
+    margin-right: 0;
+  }
+}
