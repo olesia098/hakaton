@@ -99,7 +99,6 @@ h3 {
 
 /* о Ниле */
 .about {
-  margin-top: 80px;
   display: flex;
 }
 
@@ -274,7 +273,7 @@ h3 {
 }
 
 #img3 {
-  animation: u3 9s 2;
+  animation: u3 9s infinite;
 }
 
 /* вся команда */
@@ -306,6 +305,10 @@ h3 {
 .section p {
   color: #ddd;
 }
+
+#zakladka{
+  border: 2px solid #ffffff;
+}
 /* это футер */
 
 .foot {
@@ -325,8 +328,13 @@ h3 {
 }
 
 /* aдаптивка */
-@media all and (max-width: 1024px) {
 
+@media all and (max-width: 1270px) {
+  .about {
+    margin-top: 80px;
+  }
+}
+@media all and (max-width: 1024px) {
   .search a {
     margin-right: 10px;
     margin-left: 10px;
@@ -346,6 +354,17 @@ h3 {
 
   .sidebar {
     background-color: rgb(221, 126, 67);
+    border: 2px solid #ffffff;
+  }
+
+  #zakladka{
+    border: 0px;
+  }
+}
+
+@media all and (max-width: 971px) {
+  .about{
+    padding-top: 100px ;
   }
 }
 
@@ -379,6 +398,7 @@ h3 {
   ul,
   h3 {
     margin-right: 50px;
+    margin-left: 50px;
   }
 
   .about__info {
@@ -399,4 +419,34 @@ h3 {
     width: 300px;
     margin-right: 0;
   }
+}
+
+#about_neil {
+  box-shadow: 0px 10px 45px 10px #000;
+}
+
+#about_neil:hover {
+  animation: neil 4s;
+  box-shadow: 40px #ddd;
+}
+
+@keyframes neil {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#neil_form:hover {
+  width: 500px;
+  height: 500px;
+}
+
+.search a:hover {
+  color: crimson;
 }
